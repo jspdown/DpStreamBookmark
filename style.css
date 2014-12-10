@@ -1,0 +1,75 @@
+
+a.bookmarked:visited, a.bookmarked:link {
+  color: red;
+}
+
+.bookmark-link {
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  height: 100%;
+  line-height: 100%;
+  padding: 0;
+  margin: 0;
+
+  color: red;
+  padding-right: 5px;
+  clear: both;
+}
+
+.bookmark-link:hover {
+  background: white;
+  border: 1px solid black;
+}
+
+
+#bookmark-modale {
+  display: block;
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  background: #2C3E50;
+  width: 140px;
+  height: 30px;
+  border-radius: 2px;
+  border: 1px solid #336E7B;
+}
+
+#bookmark-modale > a {
+  display: block;
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 100px;
+  height: 20px;
+  line-height: 20px;
+
+  color: #ECF0F1;
+  text-align: center;
+
+  background: #336E7B;
+  border-radius: 2px;
+  border: 1px solid #22313F;
+}
+
+#bookmark-modale > a:hover {
+  background: #3F4952;
+}
+
+#bookmark-modale-close {
+  position: absolute;
+  display: block;
+  right: 0px;
+  top: 0px;
+
+  background: #336E7B;
+  border-radius: 2px;
+  padding: 0 3px;
+  color: #ECF0F1;
+  border: 1px solid #22313F;
+}
+
+#bookmark-modale-close:hover {
+  color: red;
+  background: #3F4952;
+}

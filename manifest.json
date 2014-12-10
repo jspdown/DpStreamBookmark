@@ -1,0 +1,33 @@
+{
+  "manifest_version":       2,
+  "name":                   "DpStream bookmarks",
+  "version":                "0.1",
+  "minimum_chrome_version": "6",
+
+  "description":  "What's next",
+  "author":       "Harold Ozouf <harold.ozouf@gmail.com>",
+
+  "content_scripts": [{
+    "js":       ["index.js"],
+    "matches":  ["http://www.dpstream.net/serie-*"]
+  }],
+  "background": {
+    "scripts":    ["background.js"],
+    "persistent": false
+  },
+
+  "icons": {
+    "16": "16.png",
+    "48": "48.png",
+    "128": "128.png"
+  },
+
+  "web_accessible_resources": [
+    "style.css"
+  ],
+
+  "permissions":      [
+    "storage",
+    "contextMenus"
+  ]
+}
